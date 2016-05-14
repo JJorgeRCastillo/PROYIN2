@@ -1,0 +1,14 @@
+package com.proyin.entidades;
+
+import com.proyin.adaptadores.IDTO;
+
+public class AsignaDocumentoxOperacion implements IDTO{
+
+	private String IdOpe;
+	private Documento objDocumento;
+	private String tipMoneda;
+	private String activo;
+	private Usuario objUsuario;
+	
+	public AsignaDocumentoxOperacion(){}
+}

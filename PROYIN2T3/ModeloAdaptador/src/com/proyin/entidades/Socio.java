@@ -1,0 +1,203 @@
+package com.proyin.entidades;
+
+import com.proyin.adaptadores.IDTO;
+
+public class Socio implements IDTO{
+
+	private String idSocio;
+	private String nombreSocio; // nombre del socio
+	private String estado;
+	private String fechaEstado;
+	private String fechaIngreso;
+	private Oficina objOficina;
+	private String tipoTrabajador;
+	private String observaciones;
+	private float aporteInicial;
+	private float fondoMortuorio;
+	private float derechoInscripcion;
+	private float derechoSistema;
+	private String motivoIngreso;
+	private String categoria;
+	private String pIC;
+	private String decision;
+	
+	
+	// objeto referencia a persona natural
+	private PersonaNatural objPersonaNatural;
+	
+	//objeto referencia a usuario
+	private Usuario usuario;
+
+	public Socio(){}
+	
+	public Socio(String idSocio, String nombreSocio, String estado,
+			String fechaEstado, String fechaIngreso, Oficina objOficina,
+			String tipoTrabajador, String observaciones, float aporteInicial,
+			float fondoMortuorio, float derechoInscripcion,
+			float derechoSistema, String motivoIngreso, String categoria,
+			String pIC, String decision, PersonaNatural objPersonaNatural,
+			Usuario usuario) {
+		this.idSocio = idSocio;
+		this.nombreSocio = nombreSocio;
+		this.estado = estado;
+		this.fechaEstado = fechaEstado;
+		this.fechaIngreso = fechaIngreso;
+		this.objOficina = objOficina;
+		this.tipoTrabajador = tipoTrabajador;
+		this.observaciones = observaciones;
+		this.aporteInicial = aporteInicial;
+		this.fondoMortuorio = fondoMortuorio;
+		this.derechoInscripcion = derechoInscripcion;
+		this.derechoSistema = derechoSistema;
+		this.motivoIngreso = motivoIngreso;
+		this.categoria = categoria;
+		this.pIC = pIC;
+		this.decision = decision;
+		this.objPersonaNatural = objPersonaNatural;
+		this.usuario = usuario;
+	}
+
+	public Float getFondoMortuorio() {
+		return fondoMortuorio;
+	}
+
+	public void setFondoMortuorio(float fondoMortuorio) {
+		this.fondoMortuorio = fondoMortuorio;
+	}
+
+	public float getDerechoInscripcion() {
+		return derechoInscripcion;
+	}
+
+	public void setDerechoInscripcion(float derechoInscripcion) {
+		this.derechoInscripcion = derechoInscripcion;
+	}
+
+	public float getDerechoSistema() {
+		return derechoSistema;
+	}
+
+	public void setDerechoSistema(Float derechoSistema) {
+		this.derechoSistema = derechoSistema;
+	}
+
+	public String getMotivoIngreso() {
+		return motivoIngreso;
+	}
+
+	public void setMotivoIngreso(String motivoIngreso) {
+		this.motivoIngreso = motivoIngreso;
+	}
+
+	public String getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
+
+	public String getpIC() {
+		return pIC;
+	}
+
+	public void setpIC(String pIC) {
+		this.pIC = pIC;
+	}
+
+	public String getDecision() {
+		return decision;
+	}
+
+	public void setDecision(String decision) {
+		this.decision = decision;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
+	public String getObservaciones() {
+		return observaciones;
+	}
+
+	public void setObservaciones(String observaciones) {
+		this.observaciones = observaciones;
+	}
+
+	public float getAporteInicial() {
+		return aporteInicial;
+	}
+
+	public void setAporteInicial(float aporteInicial) {
+		this.aporteInicial = aporteInicial;
+	}
+
+	public String getIdSocio() {
+		return idSocio;
+	}
+
+	public void setIdSocio(String idSocio) {
+		this.idSocio = idSocio;
+	}
+
+	public String getNombreSocio() {
+		return nombreSocio;
+	}
+
+	public void setNombreSocio(String nombreSocio) {
+		this.nombreSocio = nombreSocio;
+	}
+
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
+	public String getFechaEstado() {
+		return fechaEstado;
+	}
+
+	public void setFechaEstado(String fechaEstado) {
+		this.fechaEstado = fechaEstado;
+	}
+
+	public String getFechaIngreso() {
+		return fechaIngreso;
+	}
+
+	public void setFechaIngreso(String fechaIngreso) {
+		this.fechaIngreso = fechaIngreso;
+	}
+
+	public Oficina getObjOficina() {
+		return objOficina;
+	}
+
+	public void setObjOficina(Oficina objOficina) {
+		this.objOficina = objOficina;
+	}
+
+	public String getTipoTrabajador() {
+		return tipoTrabajador;
+	}
+
+	public void setTipoTrabajador(String tipoTrabajador) {
+		this.tipoTrabajador = tipoTrabajador;
+	}
+
+	public PersonaNatural getObjPersonaNatural() {
+		return objPersonaNatural;
+	}
+
+	public void setObjPersonaNatural(PersonaNatural objPersonaNatural) {
+		this.objPersonaNatural = objPersonaNatural;
+	}	
+}

@@ -1,0 +1,17 @@
+package com.proyin.negocio;
+
+public class SocioLN {
+
+	private static SocioLN _instance = null;
+
+	private SocioLN() {
+	}
+
+	public static SocioLN getInstance() {
+		if (_instance == null) {
+			_instance = new SocioLN();
+		}
+		return _instance;
+	}
+	
+}

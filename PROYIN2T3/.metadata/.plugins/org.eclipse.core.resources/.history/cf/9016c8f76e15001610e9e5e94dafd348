@@ -1,0 +1,17 @@
+package com.proyin.entidades;
+
+public class Cuenta {
+	
+	private Oficina ObjOficina;
+	private TipoCuenta ObjTipoCuenta;
+	private String NumCuenta;
+	private String IdEstadoCta;
+	private String FechApertura;
+	private String TipoApertura;
+	private Float Saldo;
+	private String FechaEstado;
+	private Usuario objUsuario;
+	private String Disponibilidad;
+	private String DiferenciarDepositos;
+	private String NoReportarSaldos;	
+}

@@ -1,0 +1,79 @@
+package com.proyin.dao;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.util.List;
+
+import com.proyin.adaptadores.IDTO;
+import com.proyin.contratos.IDAO;
+import com.proyin.entidades.PersonaNatural;
+import com.proyin.entidades.SocioNatural;
+
+public class SocioDAO implements IDAO{
+
+	
+	public boolean insert(IDTO objSocio, IDTO objUsuario, float aporte) throws Exception {
+		Connection objConexion = Conexion.getInstance().ConectarBD2();
+		SocioNatural objSocioNatural = (SocioNatural)objSocio;
+		boolean respuesta = false;
+		try{
+			CallableStatement cstm = objConexion.prepareCall("{call SP_INSERTAR_SOCIO((?,?,?,?,?,?,?,?,?,?,?,?)}");
+			objConexion.setAutoCommit(false); 
+			
+			String nombreSocio = objSocioNatural.getObjPersonaNatural().getApPaterno() + " " +
+						         objSocioNatural.getObjPersonaNatural().getApMaterno() + " " +
+					             objSocioNatural.getObjPersonaNatural().getNombres();
+			cstm.setString(1, objSocioNatural.getObjPersonaNatural().getIdPersona());
+			cstm.setShort(2, );
+
+			cstm.execute();
+			objConexion.commit();
+			
+			respuesta = true;
+			
+		}catch(Exception ex){
+			objConexion.rollback();
+			throw ex;
+		}finally{
+			objConexion.setAutoCommit(true);
+			objConexion.close();
+		}
+		return respuesta;
+	}
+	
+	@Override
+	public boolean insert(IDTO dto) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean update(IDTO dto) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(IDTO dto) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<IDTO> getAll() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IDTO getById(int id) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean insertCuenta(IDTO idto) throws Exception {
+		PersonaNatural objPersonaNatural = (PersonaNatural)idto;
+		return true;
+	}
+	
+}

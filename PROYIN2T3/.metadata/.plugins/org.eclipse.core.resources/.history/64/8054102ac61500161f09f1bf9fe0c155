@@ -1,0 +1,54 @@
+package com.proyin.dao;
+
+import java.sql.Connection;
+import java.util.List;
+
+import com.proyin.adaptadores.IDTO;
+import com.proyin.contratos.IDAO;
+
+public class CuentaDAO implements IDAO {
+
+	
+	public boolean insert(IDTO dtoPersonaNatural, IDTO dtoUsuario) throws Exception {
+		Connection objConexion = Conexion.getInstance().ConectarBD2();
+		try{
+			
+		}catch(Exception ex){
+			
+		} finally {
+			objConexion.close();
+		}
+		return false;
+	}
+	
+	@Override
+	public boolean insert(IDTO dto) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean update(IDTO dto) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(IDTO dto) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<IDTO> getAll() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IDTO getById(int id) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.proyin.dao;
+
+public class AsignaDocumentoxOperacionDAO {
+
+	private static AsignaDocumentoxOperacionDAO _instance = null;
+
+	private AsignaDocumentoxOperacionDAO() {
+	}
+
+	public static AsignaDocumentoxOperacionDAO getInstance() {
+		if (_instance == null) {
+			_instance = new AsignaDocumentoxOperacionDAO();
+		}
+		return _instance;
+	}
+}

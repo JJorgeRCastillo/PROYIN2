@@ -1,0 +1,17 @@
+package com.proyin.entidades;
+
+public class SocioNatural {
+
+	private String idSocio;
+	private String socio;
+	private String estado;
+	private String fechaEstado;
+	private String fechaIngreso;
+	private Oficina objOficina;
+	private String tipoTrabajador;
+	
+	// objeto referencia a persona natural
+	private PersonaNatural objPersonaNatural;
+	
+	
+}

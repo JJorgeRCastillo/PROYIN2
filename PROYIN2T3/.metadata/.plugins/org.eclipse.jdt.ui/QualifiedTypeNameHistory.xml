@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.proyin.negocio.EmpleadoLN"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="org.springframework.ui.ModelMap"/>
+<fullyQualifiedTypeName name="org.aspectj.runtime.internal.PerObjectMap"/>
+<fullyQualifiedTypeName name="java.rmi.ConnectIOException"/>
+<fullyQualifiedTypeName name="javax.naming.spi.DirStateFactory.Result"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="com.proyin.entidades.Empleado"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+<fullyQualifiedTypeName name="java.awt.PageAttributes.MediaType"/>
+<fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="com.proyin.entidades.Urbanizacion"/>
+<fullyQualifiedTypeName name="com.proyin.entidades.Ubigeo"/>
+<fullyQualifiedTypeName name="com.proyin.dao.PersonaNaturalDAO"/>
+<fullyQualifiedTypeName name="com.proyin.negocio.PersonaNaturalLN"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.proyin.entidades.Producto"/>
+<fullyQualifiedTypeName name="com.proyin.entidades.CuentaPersona"/>
+<fullyQualifiedTypeName name="com.proyin.entidades.SocioNatural"/>
+<fullyQualifiedTypeName name="com.proyin.entidades.PersonaNatural"/>
+<fullyQualifiedTypeName name="com.proyin.dao.CuentaDAO"/>
+<fullyQualifiedTypeName name="com.proyin.entidades.Documento"/>
+<fullyQualifiedTypeName name="com.proyin.entidades.Usuario"/>
+<fullyQualifiedTypeName name="com.proyin.entidades.AsignaDocumentoxOperacion"/>
+<fullyQualifiedTypeName name="com.proyin.entidades.Socio"/>
+<fullyQualifiedTypeName name="com.proyin.contratos.IDAO"/>
+<fullyQualifiedTypeName name="com.proyin.dao.Conexion"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.CallableStatement"/>
+<fullyQualifiedTypeName name="com.proyin.dao.AsignaDocumentoxOperacionDAO"/>
+<fullyQualifiedTypeName name="com.proyin.entidades.Parametro"/>
+<fullyQualifiedTypeName name="com.proyin.dao.ParametroDAO"/>
+<fullyQualifiedTypeName name="com.proyin.adaptadores.IDTO"/>
+<fullyQualifiedTypeName name="com.proyin.entidades.TipoCuenta"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+</qualifiedTypeNameHistroy>

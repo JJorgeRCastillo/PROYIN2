@@ -1,0 +1,73 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="spring" %>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<jsp:include page="includes/libreriaslogin.jsp"></jsp:include>
+<title>Cooperativa San Lorenzo</title>
+
+<!-- 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ -->
+</head>
+ <body style="background:#F7F7F7;">
+    <div class="">
+      <a class="hiddenanchor" id="toregister"></a>
+      <a class="hiddenanchor" id="tologin"></a>
+      <div id="wrapper">
+        <div id="login" class=" form">
+          <section class="login_content">
+            <form>
+              <h1>Acceso al Sistema</h1>
+              <div>
+                <input type="text" class="form-control" placeholder="Username" required="" />
+              </div>
+              <div>
+                <input type="password" class="form-control" placeholder="Password" required="" />
+              </div>
+              <div>
+               <input type="submit" value="Ingresar" class="btn btn-default" />
+               <!-- <a class="btn btn-default submit" href="index.html">Log in</a>  --> 
+              </div>
+              <div class="clearfix"></div>
+              <div class="separator">
+				<div class="clearfix"></div>
+                <br />
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+<!-- 
+<body>
+	<div id="ggg"> <!-- class="container"
+		<h2 align="center">Acceso al Sistema</h2>
+		<form action="acceso" method="post" class="form-signin">
+			<div class="form-group">
+			<table align="center"> 
+			<tr>
+				<td><label for="usuario" class=>Usuario:</label></td>
+				<td><input name="usuario" value="" class="form-control" /></br></td> 
+			</tr>
+			<tr>
+				<td><label for="clave">Contraseña:</label></td>
+				<td><input name="clave" value="" class="form-control" type="password" /></br></td> 
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="Ingresar" style="text-align:center" class="btn btn-default"></td>
+			</tr>
+			</table>
+			</div>
+		</form>
+	</div>
+</body> 
+
+-->
+</html>
+

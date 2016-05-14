@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.proyin.entidades.SocioNatural&apos; to &apos;Socio&apos;&#x0D;&#x0A;- Original project: &apos;Modelo&apos;&#x0D;&#x0A;- Original element: &apos;com.proyin.entidades.SocioNatural&apos;&#x0D;&#x0A;- Renamed element: &apos;com.proyin.entidades.Socio&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SocioNatural&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.proyin.entidades{SocioNatural.java[SocioNatural" matchStrategy="1" name="Socio" qualified="false" references="true" similarDeclarations="false" stamp="1462768002003" textual="false" version="1.0"/>
+</session>

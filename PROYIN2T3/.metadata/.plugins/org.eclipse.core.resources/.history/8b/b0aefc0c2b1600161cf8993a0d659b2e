@@ -1,0 +1,20 @@
+package com.proyin.dao;
+
+import com.proyin.contratos.IDAO;
+
+public class ParametroDAO implements IDAO {
+
+	private static ParametroDAO _instance = null;
+
+	private ParametroDAO() {
+	}
+
+	public static ParametroDAO getInstance() {
+		if (_instance == null) {
+			_instance = new ParametroDAO();
+		}
+		return _instance;
+	}
+	
+	
+}

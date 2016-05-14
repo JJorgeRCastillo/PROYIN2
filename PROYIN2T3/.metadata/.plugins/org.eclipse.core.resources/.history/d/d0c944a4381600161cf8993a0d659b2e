@@ -1,0 +1,118 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Cooperativa San Lorenzo</title>
+<!-- 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ -->
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function() {
+	ocultarDatosAfiliacion();
+	console.log($("#tpoTrabajador").val());
+	$('#btnBuscar').click(function(e) {
+		var dni = $('#txtbuscarPersona').val();
+		if(dni.length > 0) {
+			$("#mensaje").html("");
+			// Si en vez de por post lo queremos hacer por get, cambiamos el $.post por $.get
+			$.post('buscarsocio.html', {
+				DNI : dni
+			}, function(respuesta) {
+				$('#tabla').html(respuesta).show();
+				mostrarDatosAfiliacion();
+			});
+		} else{
+			$('#tabla').html("").hide();
+			$("#mensaje").html("Ingresar un dni válido");
+			ocultarDatosAfiliacion();
+		}
+	});
+	
+	
+	$('#btnRegistrarSocio').click(function(e){
+		var id = $("#codigoPersonaN").text();
+		var nombres = $("#nombres").text();
+		var apellidoP = $("#apellidoP").text();
+		var apellidoM = $("#apellidoM").text();
+		var tpoPersona = $("#tpoPersona").val();
+		var aporteInicial = $("#txtAporteInicial").val();
+		var derInscripcion = $("#txtDerechoInscripcion").val();
+		var fondoMortuorio = $("#txtFondoMortuorio").val();
+		var tpoTrabajador = $("#tpoTrabajador").val(); 
+		$.post("registrarsocio.html",{
+			ID : id,
+			Nombres : nombres,
+			ApellidoP : apellidoP,
+			ApellidoM : apellidoM,
+			AporteIni : aporteInicial,
+			DerInscri : derInscripcion,
+			FondoM : derInscripcion,
+			TpoTrab : tpoTrabajador,
+			TpoPer : tpoPersona
+		}, function(respuesta){
+			$("#resultado").html(respuesta+". Correcto");
+		});
+	});
+});
+
+function ocultarDatosAfiliacion(){
+	$("#datosAfiliacion").hide();
+}
+function mostrarDatosAfiliacion(){
+	$("#datosAfiliacion").show();
+}
+</script>
+</head>
+<body>
+	<div><h2>Afiliación de Socio</h2>
+		<div>
+			<label>Buscar Persona: </label>
+			<input type="text" name="txtbuscarPersona" id="txtbuscarPersona">
+			<input type="button" value="Buscar" name="btnBuscar" id="btnBuscar"/>		
+		</div>
+		<div id="mensaje">
+		</div>
+	</div>
+
+	<div id="tabla">
+	</div>
+	<div id="datosAfiliacion">
+		<h2>Datos de Afiliación</h2>
+			<br/>
+		<div id="resultado"></div>
+		</br>
+		<table>
+			<tr>
+				<td>Aporte Inicial:</td>
+				<td><input type="text" name="txtAporteInicial" id="txtAporteInicial" /></td>
+			</tr>
+			<tr>
+				<td>Pago Derecho Inscripcion:</td>
+				<td><input type="text" name="txtDerechoInscripcion" id="txtDerechoInscripcion" /></td>
+			</tr>
+			<tr>
+				<td>Fondo Mortuorio:</td>
+				<td><input type="text" name="txtFondoMortuorio" id="txtFondoMortuorio" /></td>
+			</tr>
+			<tr>
+				<td>Tipo Trabajador:</td>
+				<td><select id="tpoTrabajador" class="form-control" name="cboTipoTrabajador" style="width: 100%">
+				 	     <option value="0702"> Dependiente </option>
+				 	     <option value="0703"> Independiente </option>
+				 	     <option value="0704"> Microempresario </option>
+	 	  			</select></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"> 
+					<input type="button" value="Registrar Socio" name="btnRegSocio" id="btnRegistrarSocio" />
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+</body>
+</html>

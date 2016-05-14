@@ -1,0 +1,22 @@
+package com.proyin.negocio;
+
+import java.util.List;
+
+import com.proyin.adaptadores.IDTO;
+
+public class OperacionLN {
+
+	private static OperacionLN _instance = null;
+
+	private OperacionLN() {
+	}
+
+	public static OperacionLN getInstance() {
+		if (_instance == null) {
+			_instance = new OperacionLN();
+		}
+		return _instance;
+	}
+	
+	List<IDTO> getRelacionOperaciones
+}

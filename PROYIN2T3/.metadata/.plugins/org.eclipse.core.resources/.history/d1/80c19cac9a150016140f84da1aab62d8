@@ -1,0 +1,30 @@
+package com.proyin.negocio;
+
+import java.util.List;
+
+import com.proyin.adaptadores.IDTO;
+import com.proyin.dao.OperacionDAO;
+import com.proyin.entidades.Operacion;
+
+public class OperacionLN {
+
+	private static OperacionLN _instance = null;
+
+	private OperacionLN() {
+	}
+
+	public static OperacionLN getInstance() {
+		if (_instance == null) {
+			_instance = new OperacionLN();
+		}
+		return _instance;
+	}
+	
+	public List<IDTO> getRelacionOperaciones(String idOperacion) throws Exception {
+		try{
+			return (List<IDTO>)OperacionDAO.getInstance().getRelacionOperaciones(idOperacion);
+		}catch(Exception ex){
+			throw ex;
+		}
+	}
+}

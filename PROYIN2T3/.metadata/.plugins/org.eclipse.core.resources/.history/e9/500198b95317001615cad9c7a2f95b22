@@ -1,0 +1,7 @@
+    <!-- Bootstrap -->
+    <link href="resources/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="resources/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="resources/css/custom.css" rel="stylesheet">

@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="spring" %>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>BIENVENIDO AL SISTEMA</title>
+</head>
+<body>
+	<table align="center"> 
+		<form action="acceso" method="post">
+		<tr>
+			<label for="usuario"></label>
+			<input name="usuario" value="" />
+			</tr>
+			<tr>
+			<label for="clave"></label>
+			<input name="clave" value="" />
+			</tr>
+			<input type="submit" value="Ingresar">
+		</form>
+	</table>
+</body>
+</html>

@@ -1,0 +1,151 @@
+package com.proyin.entidades;
+
+import com.proyin.adaptadores.IDTO;
+
+public class Persona implements IDTO{
+
+	private String idPersona;
+	private String tipoPersona; // N o J
+	private Urbanizacion objUrbanizacion;
+	private String tipoVivienda;
+	private String direccion;
+	private String fechaNacimiento;
+	private String telefono;
+	private Ubigeo objUbigeoDireccion;
+	private Ubigeo objUbigeoNacionalidad;
+	private float ingresoMensual;
+	private String correo;
+	private Usuario objUsuario;
+	private String fechaRegistro;
+	private String horaRegistro;
+	private String referenciaDireccion;
+	private String celular;
+	private String direccionNegocio;
+	
+
+	
+	public Persona(){}
+	
+	
+
+	public String getIdPersona() {
+		return idPersona;
+	}
+
+	public void setIdPersona(String idPersona) {
+		this.idPersona = idPersona;
+	}
+
+	public String getTipoPersona() {
+		return tipoPersona;
+	}
+
+	public void setTipoPersona(String tipoPersona) {
+		this.tipoPersona = tipoPersona;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public String getFechaNacimiento() {
+		return fechaNacimiento;
+	}
+
+	public void setFechaNacimiento(String fechaNacimiento) {
+		this.fechaNacimiento = fechaNacimiento;
+	}
+
+	public String getTelefono() {
+		return telefono;
+	}
+
+	public void setTelefono(String telefono) {
+		this.telefono = telefono;
+	}
+
+	public Ubigeo getObjUbigeoDireccion() {
+		return objUbigeoDireccion;
+	}
+
+	public void setObjUbigeoDireccion(Ubigeo objUbigeoDireccion) {
+		this.objUbigeoDireccion = objUbigeoDireccion;
+	}
+
+	public Ubigeo getObjUbigeoNacionalidad() {
+		return objUbigeoNacionalidad;
+	}
+
+	public void setObjUbigeoNacionalidad(Ubigeo objUbigeoNacionalidad) {
+		this.objUbigeoNacionalidad = objUbigeoNacionalidad;
+	}
+
+	public float getIngresoMensual() {
+		return ingresoMensual;
+	}
+
+	public void setIngresoMensual(float ingresoMensual) {
+		this.ingresoMensual = ingresoMensual;
+	}
+
+	public String getCorreo() {
+		return correo;
+	}
+
+	public void setCorreo(String correo) {
+		this.correo = correo;
+	}
+
+	public Usuario getObjUsuario() {
+		return objUsuario;
+	}
+
+	public void setObjUsuario(Usuario objUsuario) {
+		this.objUsuario = objUsuario;
+	}
+
+	public String getFechaRegistro() {
+		return fechaRegistro;
+	}
+
+	public void setFechaRegistro(String fechaRegistro) {
+		this.fechaRegistro = fechaRegistro;
+	}
+
+	public String getHoraRegistro() {
+		return horaRegistro;
+	}
+
+	public void setHoraRegistro(String horaRegistro) {
+		this.horaRegistro = horaRegistro;
+	}
+
+	public String getReferenciaDireccion() {
+		return referenciaDireccion;
+	}
+
+	public void setReferenciaDireccion(String referenciaDireccion) {
+		this.referenciaDireccion = referenciaDireccion;
+	}
+
+	public String getCelular() {
+		return celular;
+	}
+
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
+
+	public String getDireccionNegocio() {
+		return direccionNegocio;
+	}
+
+	public void setDireccionNegocio(String direccionNegocio) {
+		this.direccionNegocio = direccionNegocio;
+	}	
+
+}

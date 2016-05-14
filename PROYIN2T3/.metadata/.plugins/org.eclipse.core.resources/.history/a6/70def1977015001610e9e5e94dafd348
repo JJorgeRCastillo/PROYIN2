@@ -1,0 +1,13 @@
+package com.proyin.entidades;
+
+public class CuentaPersona {
+
+	private Cuenta objCuenta;
+	private Persona objPersona;
+	private String titular; // nombre del titular
+	
+	// referencia de usuario que registra
+	private Usuario objUsuario;
+	
+	
+}

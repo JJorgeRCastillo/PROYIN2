@@ -1,0 +1,18 @@
+package com.proyin.dao;
+
+import com.proyin.contratos.IDAO;
+
+public class AsignaDocumentoxOperacionDAO implements IDAO{
+
+	private static AsignaDocumentoxOperacionDAO _instance = null;
+
+	private AsignaDocumentoxOperacionDAO() {
+	}
+
+	public static AsignaDocumentoxOperacionDAO getInstance() {
+		if (_instance == null) {
+			_instance = new AsignaDocumentoxOperacionDAO();
+		}
+		return _instance;
+	}
+}

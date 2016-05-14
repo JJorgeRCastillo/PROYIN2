@@ -1,0 +1,79 @@
+package com.proyin.entidades;
+
+public class SocioNatural {
+
+	private String idSocio;
+	private String socio;
+	private String estado;
+	private String fechaEstado;
+	private String fechaIngreso;
+	private Oficina objOficina;
+	private String tipoTrabajador;
+	
+	// objeto referencia a persona natural
+	private PersonaNatural objPersonaNatural;
+
+	public String getIdSocio() {
+		return idSocio;
+	}
+
+	public void setIdSocio(String idSocio) {
+		this.idSocio = idSocio;
+	}
+
+	public String getSocio() {
+		return socio;
+	}
+
+	public void setSocio(String socio) {
+		this.socio = socio;
+	}
+
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
+	public String getFechaEstado() {
+		return fechaEstado;
+	}
+
+	public void setFechaEstado(String fechaEstado) {
+		this.fechaEstado = fechaEstado;
+	}
+
+	public String getFechaIngreso() {
+		return fechaIngreso;
+	}
+
+	public void setFechaIngreso(String fechaIngreso) {
+		this.fechaIngreso = fechaIngreso;
+	}
+
+	public Oficina getObjOficina() {
+		return objOficina;
+	}
+
+	public void setObjOficina(Oficina objOficina) {
+		this.objOficina = objOficina;
+	}
+
+	public String getTipoTrabajador() {
+		return tipoTrabajador;
+	}
+
+	public void setTipoTrabajador(String tipoTrabajador) {
+		this.tipoTrabajador = tipoTrabajador;
+	}
+
+	public PersonaNatural getObjPersonaNatural() {
+		return objPersonaNatural;
+	}
+
+	public void setObjPersonaNatural(PersonaNatural objPersonaNatural) {
+		this.objPersonaNatural = objPersonaNatural;
+	}	
+}

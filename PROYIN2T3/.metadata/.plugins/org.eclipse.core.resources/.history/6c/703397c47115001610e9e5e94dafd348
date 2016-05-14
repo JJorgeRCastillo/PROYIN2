@@ -1,0 +1,17 @@
+package com.proyin.entidades;
+
+public class Operacion {
+
+	private String idOperacion;
+	private String nombreOperacion;
+	private TipoOperacion objTipoOperacion;
+	private String activo;
+	private String mostrar;
+	private Usuario usuario;
+	private String nroOrden;
+	private String elemento;
+	private Operacion objOpeExt;
+	private Operacion objOpeAnt;
+	private Operacion objOpeExtAnt;
+	private int orden;
+}

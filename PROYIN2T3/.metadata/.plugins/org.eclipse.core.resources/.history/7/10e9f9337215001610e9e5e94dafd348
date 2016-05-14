@@ -1,0 +1,5 @@
+package com.proyin.dao;
+
+public class CuentaDAO {
+
+}

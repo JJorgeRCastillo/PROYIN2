@@ -1,0 +1,12 @@
+package com.proyin.entidades;
+
+public class TipoCuenta {
+	private String idTipoCuenta;
+	private String TipMoneda       ;
+	private Producto objProducto      ;
+	private String Descripcion     ;
+	private Float TasaVigente     ;
+	private Float MontoMinimo     ;
+	private int Plazo           ;
+	private Float TEAVigente      ;
+}

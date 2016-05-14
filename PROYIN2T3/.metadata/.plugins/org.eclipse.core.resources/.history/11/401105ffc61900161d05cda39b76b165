@@ -1,0 +1,56 @@
+<script>
+$(document).ready(function() {
+	ocultarDatosAfiliacion();
+	//console.log($("#tpoTrabajador").val());
+	$('#btnBuscar').click(function(e) {
+		var dni = $('#txtbuscarPersona').val();
+		if(dni.length > 0) {
+			$("#mensaje").html("");
+			// Si en vez de por post lo queremos hacer por get, cambiamos el $.post por $.get
+			$.post('buscarsocio.html', {
+				DNI : dni
+			}, function(respuesta) {
+				$('#tabla').html(respuesta).show();
+				mostrarDatosAfiliacion();
+			});
+		} else{
+			$('#tabla').html("").hide();
+			$("#mensaje").html("Ingresar un dni válido");
+			ocultarDatosAfiliacion();
+		}
+	});
+	
+	
+	$('#btnRegistrarSocio').click(function(e){
+		var id = $("#codigoPersonaN").text();
+		var nombres = $("#nombres").text();
+		var apellidoP = $("#apellidoP").text();
+		var apellidoM = $("#apellidoM").text();
+		var tpoPersona = $("#tpoPersona").val();
+		var aporteInicial = $("#txtAporteInicial").val();
+		var derInscripcion = $("#txtDerechoInscripcion").val();
+		var fondoMortuorio = $("#txtFondoMortuorio").val();
+		var tpoTrabajador = $("#tpoTrabajador").val(); 
+		$.post("registrarsocio.html",{
+			ID : id,
+			Nombres : nombres,
+			ApellidoP : apellidoP,
+			ApellidoM : apellidoM,
+			AporteIni : aporteInicial,
+			DerInscri : derInscripcion,
+			FondoM : derInscripcion,
+			TpoTrab : tpoTrabajador,
+			TpoPer : tpoPersona
+		}, function(respuesta){
+			$("#resultado").html(respuesta+". Correcto");
+		});
+	});
+});
+
+function ocultarDatosAfiliacion(){
+	$("#datosAfiliacion").hide();
+}
+function mostrarDatosAfiliacion(){
+	$("#datosAfiliacion").show();
+}
+</script>
