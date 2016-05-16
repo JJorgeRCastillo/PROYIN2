@@ -1,7 +1,0 @@
-package com.proyin.dao;
-
-import com.proyin.contratos.IDAO;
-
-public class CuentaDAO implements IDAO {
-
-}

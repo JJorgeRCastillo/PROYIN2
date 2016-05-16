@@ -1,0 +1,21 @@
+package com.proyin.dao;
+
+import com.proyin.contratos.IDAO;
+
+public class TransaccionDAO implements IDAO {
+
+	private static TransaccionDAO _instance = null;
+
+	private TransaccionDAO() {
+	}
+
+	public static TransaccionDAO getInstance() {
+		if (_instance == null) {
+			_instance = new TransaccionDAO();
+		}
+		return _instance;
+	}
+	
+	
+	
+}

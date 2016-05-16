@@ -1,0 +1,14 @@
+package com.proyin.entidades;
+
+import com.proyin.adaptadores.IDTO;
+
+public class EstructuraContable implements IDTO {
+
+	private Operacion objOperaciones;
+	private Oficina objOficina;
+	private String cuentaCargo;
+	private String cuentaAbono;
+	private String tipMoneda;
+	private String activo;
+	private Usuario usuario;
+}

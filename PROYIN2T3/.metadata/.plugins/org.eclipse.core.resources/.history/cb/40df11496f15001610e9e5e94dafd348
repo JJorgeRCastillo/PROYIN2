@@ -1,8 +1,0 @@
-package com.proyin.entidades;
-
-public class Producto {
-	
-	private String idProducto;
-	private String descripcion;
-	private String maxCuenta;
-}

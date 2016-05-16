@@ -1,0 +1,9 @@
+package com.proyin.entidades;
+
+import com.proyin.adaptadores.IDTO;
+
+public class TransaccionxCuenta implements IDTO {
+	
+	
+	public TransaccionxCuenta(){}
+}

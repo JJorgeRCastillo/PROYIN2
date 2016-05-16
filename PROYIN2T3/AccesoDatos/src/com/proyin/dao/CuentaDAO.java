@@ -28,27 +28,23 @@ public class CuentaDAO implements IDAO {
 		Socio objSocio = (Socio)dtoSocio;
 		Usuario objUsuario = (Usuario)dtoUsuario;
 
-		boolean respuesta = false;
+		boolean ok = false;
 		try{
 			CallableStatement cstm = objConexion.prepareCall("{call SP_INSERT_CUENTA(?,?,?)}");
-			objConexion.setAutoCommit(false);
 			cstm.setString(1, objUsuario.getObjEmpleado().getObjOficina().getIdOficina());
 			cstm.setString(2, objUsuario.getIdUsuario());
 			cstm.setString(3, objSocio.getObjPersonaNatural().getIdPersona());
 			
 			cstm.execute();
-			objConexion.commit();
-			respuesta = true;
+			ok = true;
 			
 		}catch(Exception ex){
-			respuesta = false;
-			objConexion.rollback();
 			throw ex;
 		} finally {
 			//objConexion.close();
 			//objConexion.setAutoCommit(true);
 		}
-		return respuesta;
+		return ok;
 	}
 	
 	@Override

@@ -1,0 +1,61 @@
+package com.proyin.dao;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.util.List;
+
+import com.proyin.adaptadores.IDTO;
+import com.proyin.contratos.IDAO;
+
+public class TransaccionDAO implements IDAO {
+
+	private static TransaccionDAO _instance = null;
+
+	private TransaccionDAO() {
+	}
+
+	public static TransaccionDAO getInstance() {
+		if (_instance == null) {
+			_instance = new TransaccionDAO();
+		}
+		return _instance;
+	}
+
+	@Override
+	public boolean insert(IDTO dto) throws Exception {
+		Connection objConexion = Conexion.getInstance().ConectarBD2();
+		try{
+			CallableStatement cstm = objConexion.prepareCall("{call SP_INSERTAR_TRANSACCION}");
+		}catch(Exception ex){
+			throw ex;
+		}
+		return false;
+	}
+
+	@Override
+	public boolean update(IDTO dto) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(IDTO dto) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<IDTO> getAll() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IDTO getById(int id) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+}

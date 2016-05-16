@@ -1,8 +1,0 @@
-package com.proyin.entidades;
-
-public class Documento {
-
-	private String idDocumento;
-	private String nombreDocumento;
-	private String abreviado;
-}

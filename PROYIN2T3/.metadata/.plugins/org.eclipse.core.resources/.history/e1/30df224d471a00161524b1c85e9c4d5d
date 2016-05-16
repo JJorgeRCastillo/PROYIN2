@@ -1,0 +1,17 @@
+package com.proyin.entidades;
+
+import com.proyin.adaptadores.IDTO;
+
+public class Transaccion implements IDTO {
+	
+	private String idOficina;
+	private String norTransaccion;
+	private Oficina objOficinaDoc;
+	private Documento objDocumento;
+	private String tipoMoneda;
+	private String nroDocumento; // puede ser objeto documento
+	private Oficina objOficinaE; // oficina externa?
+	private String idDepartamento; // id del departamento
+	private Puesto objPuesto;
+	
+}

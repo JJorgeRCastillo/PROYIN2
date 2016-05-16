@@ -56,19 +56,19 @@ public class ParametroDAO implements IDAO {
 	public boolean actualizarParametro(IDTO idtoParametro) throws Exception {
 		Connection objConexion = Conexion.getInstance().ConectarBD2();
 		Parametro objParametro = (Parametro)idtoParametro;
-		boolean respuesta = false;
+		boolean sol = false;
 		try{
 			CallableStatement cstm = objConexion.prepareCall("{call SP_ACTUALIZAR_PARAMETRO(?,?)}");
 			cstm.setString(1, objParametro.getIdParametro());
 			cstm.setString(2, objParametro.getValor());
 			
 			cstm.execute();
-			respuesta = true;
+			sol = true;
 			
 		}catch(Exception ex){
 			throw ex;
 		}
-		return respuesta;
+		return sol;
 	}
 	
 	public IDTO getParametroCompuesto (String parametro, String idOficina, String tipoMoneda) throws Exception {
@@ -92,7 +92,5 @@ public class ParametroDAO implements IDAO {
 			throw ex;
 		}
 		return (IDTO)objParametro;
-	}
-	
-	
+	}	
 }

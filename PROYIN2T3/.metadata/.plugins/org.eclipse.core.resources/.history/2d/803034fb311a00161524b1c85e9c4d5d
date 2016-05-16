@@ -1,0 +1,107 @@
+package com.proyin.dao;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.util.List;
+
+import com.proyin.adaptadores.IDTO;
+import com.proyin.contratos.IDAO;
+import com.proyin.entidades.Parametro;
+
+public class ParametroDAO implements IDAO {
+
+	private static ParametroDAO _instance = null;
+
+	private ParametroDAO() {
+	}
+
+	public static ParametroDAO getInstance() {
+		if (_instance == null) {
+			_instance = new ParametroDAO();
+		}
+		return _instance;
+	}
+
+	@Override
+	public boolean insert(IDTO dto) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean update(IDTO dto) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(IDTO dto) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<IDTO> getAll() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IDTO getById(int id) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public boolean actualizarParametro(IDTO idtoParametro) throws Exception {
+		Connection objConexion = Conexion.getInstance().ConectarBD2();
+		Parametro objParametro = (Parametro)idtoParametro;
+		boolean respuesta = false;
+		try{
+			CallableStatement cstm = objConexion.prepareCall("{call SP_ACTUALIZAR_PARAMETRO(?,?)}");
+			cstm.setString(1, objParametro.getIdParametro());
+			cstm.setString(2, objParametro.getValor());
+			
+			cstm.execute();
+			respuesta = true;
+			
+		}catch(Exception ex){
+			throw ex;
+		}
+		return respuesta;
+	}
+	
+	public IDTO getParametroCompuesto (String parametro, String idOficina, String tipoMoneda) throws Exception {
+		Connection objConexion = Conexion.getInstance().ConectarBD2();
+		Parametro objParametro = null;
+		try{
+			CallableStatement cstm = objConexion.prepareCall("{call SP_OBTENER_PARAMETRO_COMPUESTO(?,?,?)}");
+			cstm.setString(1, parametro);
+			cstm.setString(2, idOficina);
+			cstm.setString(3, tipoMoneda);
+			
+			ResultSet rs = cstm.executeQuery();
+			
+			if(rs.next()){
+				objParametro = new Parametro();
+				objParametro.setValor(rs.getString("Valor"));
+				objParametro.setIdParametro(rs.getString("IdParam"));
+			}
+			
+		}catch(Exception ex){
+			throw ex;
+		}
+		return (IDTO)objParametro;
+	}
+	
+	public IDTO getParametroTransaccion(String parametro, String idOficina, String tipoMoneda) throws Exception {
+		Connection objConexion = Conexion.getInstance().ConectarBD2();
+		try{
+			
+		} catch(Exception ex){
+			throw ex;
+		}
+	}
+	
+	
+}

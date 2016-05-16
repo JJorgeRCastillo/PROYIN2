@@ -1,0 +1,18 @@
+package com.proyin.dao;
+
+public class TransaccionDAO {
+
+	private static TransaccionDAO _instance = null;
+
+	private TransaccionDAO() {
+	}
+
+	public static TransaccionDAO getInstance() {
+		if (_instance == null) {
+			_instance = new TransaccionDAO();
+		}
+		return _instance;
+	}
+	
+	
+}

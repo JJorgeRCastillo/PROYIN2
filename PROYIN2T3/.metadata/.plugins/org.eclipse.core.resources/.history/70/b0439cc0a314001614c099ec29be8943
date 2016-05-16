@@ -1,5 +1,0 @@
-package com.proyin.entidades;
-
-public class Urbanizacion implements IDTO {
-
-}

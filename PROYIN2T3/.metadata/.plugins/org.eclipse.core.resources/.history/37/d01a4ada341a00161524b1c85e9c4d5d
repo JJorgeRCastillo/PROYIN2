@@ -1,0 +1,12 @@
+package com.proyin.entidades;
+
+public class EstructuraContable {
+
+	private Operacion objOperaciones;
+	private Oficina objOficina;
+	private String cuentaCargo;
+	private String cuentaAbono;
+	private String tipMoneda;
+	private String activo;
+	private Usuario usuario;
+}
