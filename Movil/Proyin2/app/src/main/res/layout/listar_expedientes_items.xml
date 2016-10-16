@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/txtNombreSocio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:text="@string/vacio"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:textSize="14dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:text="@string/lst_exp_nro"
+            />
+
+        <TextView android:id="@+id/txtNroExpediente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:paddingRight="20dp"
+            android:paddingTop="3dp"
+            android:textColor="@color/black"
+            android:text="@string/vacio"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:textSize="14dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:text="@string/lst_exp_monto_solicitado"
+            />
+
+        <TextView android:id="@+id/txtMontoSolicitado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:paddingRight="20dp"
+            android:paddingTop="3dp"
+            android:textColor="@color/black"
+            android:text="@string/vacio"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:textSize="14dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:text="@string/lst_exp_fecha"
+            />
+
+        <TextView android:id="@+id/txtFechaExpediente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:textColor="@color/black"
+            android:text="@string/vacio"
+            />
+    </LinearLayout>
+</LinearLayout>

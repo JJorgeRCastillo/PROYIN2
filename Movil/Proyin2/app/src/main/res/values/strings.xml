@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- RECURSOS DE CADENAS GENERALES -->
+    <string name="app_name">San Lorenzo</string>
+    <string name="nombre_empresa">COOPERATIVA SAN LORENZO</string>
+    <string name="action_settings">Settings</string>
+    <string name="vacio"></string>
+    <string name="aceptar">Aceptar</string>
+
+    <!-- RECURSOS DE CADENAS PARA LOS HINT DE LOS CONTROLES -->
+    <string name="hint_user">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+
+    <!-- RECURSOS DE CADENAS PARA LOS BOTONES -->
+    <string name="name_btnLogin">INICIAR SESIÓN</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="name_btnAprobarExpediente">Aprobar</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- RECURSOS DE CADENAS PARA ALERTS -->
+    <string name="alert_message_login_error_credenciales">Credenciales Incorrectas.</string>
+    <string name="alert_title_credenciales">Error</string>
+
+    <!-- RECURSOS DE TEXTVIEW PARA LISTA DE EXPEIDENTES -->
+    <string name="lst_exp_nombre_socio">Socio:</string>
+    <string name="lst_exp_fecha">Fecha:</string>
+    <string name="lst_exp_monto_solicitado">Monto:</string>
+    <string name="lst_exp_nro">N° Expediente:</string>
+
+    <!-- RECURSOS DE CADENAS PARA DETALLE DE ITEMS DE EXPEDIENTES -->
+    <string name="lbl_detail_exp_socio">SOCIO:</string>
+    <string name="lbl_detail_exp_expediente">EXPED:</string>
+    <string name="lbl_detail_exp_monto">MONTO:</string>
+    <string name="lbl_detail_exp_plazo">PLAZO:</string>
+    <string name="lbl_detail_exp_tasa">TASA:</string>
+    <string name="lbl_detail_exp_pvencimiento">1° VENC:</string>
+</resources>

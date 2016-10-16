@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.proyin.com.proyin2.Login">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/primary">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/nombre_empresa"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/base"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/vacio"
+                android:id="@+id/txtError"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/error"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textPersonName"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:hint="@string/hint_user"
+                android:ems="10"
+                android:id="@+id/txtUsuario" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:inputType="textPassword"
+                android:hint="@string/hint_password"
+                android:ems="10"
+                android:id="@+id/txtPassword" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_btnLogin"
+                android:id="@+id/btnIniciarSesion"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/botones"
+                android:textColor="@color/base"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

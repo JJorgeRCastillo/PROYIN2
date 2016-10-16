@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+    </style>
+
+    <style name="NoActionBar" parent="AppTheme">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <color name="accent">#00B8D4</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary">#2196F3</color>
+
+    <color name="base">#FFF</color>
+    <color name="black">#000</color>
+    <color name="error">#F44336</color>
+
+    <color name="clickable">#2196F3</color>
+
+    <color name="color_list_item">#47d7cfac</color>
+
+
+</resources>
