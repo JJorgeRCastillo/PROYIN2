@@ -1,9 +1,12 @@
 ## DESCRIPCIÓN DEL PROYECTO
+
 Proyecto Integrador 2 UPN: Solución web y móvil bajo una aqruitectura basada en adaptadores para la entidad San Lorenzo LTDA, se implementa el módulo de aprobación de créditos. Para el presente proyecto se desarrollo bajo el lenguaje Java tanto en web como en móvil, la parte Web se usó Spring Framework.
 
 ## ARQUITECTURA PLANTEADA PARA EL PROYECTO
+
 La arquitectura del proyecto está basada en MVC como patron de diseño y e N-Capas como arquitectura, pero para dar una solución mucho más eficiente se desarrolla un módulo adaptador para las entidades, para poder hacer un mejor mantenimiento del software y permitir el bajo acoplamiento. Esta misma arquitectura por medio de un servicio web se puede enlazar a la aplicación de Android como se puede apreciar en el "Módulo App", de esta manera reutilizamos los componentes y no tenemos que crear nuevos modelos, sino haciendo uso de las interfaces IDTO que brinda el módulo adaptador se logra esto.
 Descripción gráfica de la arquitectura.
+
 ![image](https://cloud.githubusercontent.com/assets/7152507/19419502/9d009896-939e-11e6-8986-4d1fa0d98a86.png)
 
 ## APLICACIÓN WEB (vista general)
